@@ -2,7 +2,7 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:70A5FD,100:BF91F3&height=190&section=header&text=Maksim%20Tsikvasvili&fontSize=42&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Software%20Developer&descAlignY=57&descSize=18)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=70A5FD&center=true&vCenter=true&width=720&lines=Software+Developer;C%23+%7C+TypeScript+%7C+Python+%7C+JavaScript;PHP+%7C+HTML+%7C+CSS+%7C+T-SQL;Lua+%7C+Hack+%7C+Shell+%7C+Dockerfile)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=70A5FD&center=true&vCenter=true&width=720&lines=Software+Developer;C%23+%7C+TypeScript+%7C+Python+%7C+JavaScript;PHP+%7C+HTML+%7C+CSS+%7C+SQL+%7C+Lua)](https://git.io/typing-svg)
 
 [![GitHub followers](https://img.shields.io/github/followers/maksimts-kool?style=for-the-badge&logo=github&label=Followers&color=70A5FD)](https://github.com/maksimts-kool?tab=followers)
 [![Profile views](https://komarev.com/ghpvc/?username=maksimts-kool&style=for-the-badge&color=BF91F3)](https://github.com/maksimts-kool)
@@ -29,11 +29,8 @@ I’m Maksim, a software developer focused on practical software that connects c
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![T-SQL](https://img.shields.io/badge/T--SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
-![Hack](https://img.shields.io/badge/Hack-878787?style=for-the-badge&logoColor=white)
-![Dockerfile](https://img.shields.io/badge/Dockerfile-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 
 </div>
 
