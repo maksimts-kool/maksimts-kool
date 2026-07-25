@@ -56,7 +56,7 @@ I’m Maksim, a software developer focused on practical software that connects c
 <table>
 <tr>
 <td width="50%" valign="top">
-<h3 align="center">🕹️ <a href="https://github.com/maksimts-kool/mylebot">Discord–Roblox Session Tracker</a></h3>
+<h3 align="center">🥇 <a href="https://github.com/maksimts-kool/mylebot">Discord–Roblox Session Tracker</a></h3>
 <p align="center">Live Roblox session tracking, administration, reports, and leaderboards delivered through Discord.</p>
 <p align="center">
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -65,7 +65,7 @@ I’m Maksim, a software developer focused on practical software that connects c
 </p>
 </td>
 <td width="50%" valign="top">
-<h3 align="center">🏬 <a href="https://github.com/maksimts-kool/myle-storeowners">My Lifts Mall Portal</a></h3>
+<h3 align="center">🥈 <a href="https://github.com/maksimts-kool/myle-storeowners">My Lifts Mall Portal</a></h3>
 <p align="center">A verified-member portal for store browsing, elections, and Roblox place-file submissions.</p>
 <p align="center">
 <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
@@ -75,34 +75,13 @@ I’m Maksim, a software developer focused on practical software that connects c
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-<h3 align="center">🚆 <a href="https://github.com/maksimts-kool/scrshift2">SCR Virtual Shift Generator</a></h3>
+<td colspan="2" valign="top">
+<h3 align="center">🥉 <a href="https://github.com/maksimts-kool/scrshift2">SCR Virtual Shift Generator</a></h3>
 <p align="center">Generates realistic, connected driving shifts from live Stepford County Railway route data.</p>
 <p align="center">
 <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
 <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
-</p>
-</td>
-<td width="50%" valign="top">
-<h3 align="center">🤖 <a href="https://github.com/maksimts-kool/sbaHelper">SBA Helper Bots</a></h3>
-<p align="center">Telegram bots for media downloads and automatic uMap route-change notifications.</p>
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-</p>
-</td>
-</tr>
-<tr>
-<td colspan="2" valign="top">
-<h3 align="center">📺 <a href="https://github.com/maksimts-kool/iptv-info-channel">IPTV Info Channel</a></h3>
-<p align="center">Personal HLS channels with animated account details, EPG support, a React admin interface, and Docker deployment.</p>
-<p align="center">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-<img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white" alt="FFmpeg" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
 </p>
 </td>
 </tr>
