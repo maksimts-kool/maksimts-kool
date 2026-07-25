@@ -53,22 +53,102 @@ I’m Maksim, a software developer focused on practical software that connects c
 
 ## Personal projects
 
-- **[Discord–Roblox Session Tracker](https://github.com/maksimts-kool/mylebot)** — Tracks Roblox play sessions in PostgreSQL and publishes live updates, history, administration tools, and leaderboards through Discord.
-- **[My Lifts Mall — Store Owners Portal](https://github.com/maksimts-kool/myle-storeowners)** — A React and Fastify portal where verified members browse stores, vote in elections, and submit Roblox place files for review.
-- **[SCR Virtual Shift Generator](https://github.com/maksimts-kool/scrshift2)** — A React app that generates realistic, connected driving shifts from live route data for Stepford County Railway.
-- **[SBA Helper Bots](https://github.com/maksimts-kool/sbaHelper)** — Two containerized Python Telegram bots for media downloads and uMap route-change notifications.
-- **[IPTV Info Channel](https://github.com/maksimts-kool/iptv-info-channel)** — A personal HLS channel generator with animated account information, an admin interface, EPG support, and Docker deployment.
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3 align="center">🥇 <a href="https://github.com/maksimts-kool/mylebot">Discord–Roblox Session Tracker</a></h3>
+<p align="center">Live Roblox session tracking, administration, reports, and leaderboards delivered through Discord.</p>
+<p align="center">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
+<img src="https://img.shields.io/badge/Roblox-000000?style=flat-square&logo=roblox&logoColor=white" alt="Roblox" />
+</p>
+</td>
+<td width="50%" valign="top">
+<h3 align="center">🥈 <a href="https://github.com/maksimts-kool/myle-storeowners">My Lifts Mall Portal</a></h3>
+<p align="center">A verified-member portal for store browsing, elections, and Roblox place-file submissions.</p>
+<p align="center">
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+<img src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=fastify&logoColor=white" alt="Fastify" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<h3 align="center">🥉 <a href="https://github.com/maksimts-kool/scrshift2">SCR Virtual Shift Generator</a></h3>
+<p align="center">Generates realistic, connected driving shifts from live Stepford County Railway route data.</p>
+<p align="center">
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+</p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3 align="center">🤖 <a href="https://github.com/maksimts-kool/sbaHelper">SBA Helper Bots</a></h3>
+<p align="center">Telegram bots for media downloads and automatic uMap route-change notifications.</p>
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+</p>
+</td>
+<td width="50%" valign="top">
+<h3 align="center">📺 <a href="https://github.com/maksimts-kool/iptv-info-channel">IPTV Info Channel</a></h3>
+<p align="center">Personal HLS channels with animated account details, EPG support, a React admin interface, and Docker deployment.</p>
+<p align="center">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+<img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white" alt="FFmpeg" />
+</p>
+</td>
+</tr>
+</table>
 
 ## Koolitööd
 
 Siin on valik minu õppetöö käigus valminud projekte. Nendes hoidlates harjutan programmeerimist, veebiarendust, mobiilirakenduste loomist, võrgurakendusi ja andmebaase.
 
-- **[Apache-project](https://github.com/maksimts-kool/Apache-project)** — PHP ja Apache veebirakenduse projekt.
-- **[Veebirakendused](https://github.com/maksimts-kool/Veebirakendused)** — veebiarenduse ülesanded HTML-i, CSS-i, JavaScripti ja PHP-ga.
-- **[Võrgurakendused](https://github.com/maksimts-kool/Vorgurakendused)** — Pythoni-põhised võrgurakenduste harjutused ja projektid.
-- **[Mobiilirakendused](https://github.com/maksimts-kool/Mobiilirakendused)** — C# mobiilirakenduste õppetööd.
-- **[Programmeerimine](https://github.com/maksimts-kool/Programmeerimine)** — C# programmeerimise alused ja praktilised ülesanded.
-- **[Andmebaasid](https://github.com/maksimts-kool/Andmebaasid25)** — andmebaaside ülesanded, sealhulgas trigerid, protseduurid ja funktsioonid.
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3 align="center">🌐 <a href="https://github.com/maksimts-kool/Apache-project">Apache-project</a></h3>
+<p align="center">PHP ja Apache veebirakenduse projekt.</p>
+<p align="center"><img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=apache&logoColor=white" alt="Apache" /></p>
+</td>
+<td width="50%" valign="top">
+<h3 align="center">🖥️ <a href="https://github.com/maksimts-kool/Veebirakendused">Veebirakendused</a></h3>
+<p align="center">Veebiarenduse ülesanded HTML-i, CSS-i, JavaScripti ja PHP-ga.</p>
+<p align="center"><img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" /></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3 align="center">🔌 <a href="https://github.com/maksimts-kool/Vorgurakendused">Võrgurakendused</a></h3>
+<p align="center">Pythoni-põhised võrgurakenduste harjutused ja projektid.</p>
+<p align="center"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /></p>
+</td>
+<td width="50%" valign="top">
+<h3 align="center">📱 <a href="https://github.com/maksimts-kool/Mobiilirakendused">Mobiilirakendused</a></h3>
+<p align="center">C# mobiilirakenduste õppetööd.</p>
+<p align="center"><img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="C#" /></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3 align="center">🧩 <a href="https://github.com/maksimts-kool/Programmeerimine">Programmeerimine</a></h3>
+<p align="center">C# programmeerimise alused ja praktilised ülesanded.</p>
+<p align="center"><img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="C#" /></p>
+</td>
+<td width="50%" valign="top">
+<h3 align="center">🗄️ <a href="https://github.com/maksimts-kool/Andmebaasid25">Andmebaasid</a></h3>
+<p align="center">Andmebaaside ülesanded, sealhulgas trigerid, protseduurid ja funktsioonid.</p>
+<p align="center"><img src="https://img.shields.io/badge/SQL-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" alt="SQL" /></p>
+</td>
+</tr>
+</table>
 
 ## GitHub stats
 
