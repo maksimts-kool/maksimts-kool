@@ -2,7 +2,7 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:70A5FD,100:BF91F3&height=190&section=header&text=Maksim%20Tsikvasvili&fontSize=42&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Software%20Developer&descAlignY=57&descSize=18)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=70A5FD&center=true&vCenter=true&width=720&lines=Software+Developer;C%23+%7C+TypeScript+%7C+Python+%7C+JavaScript;PHP+%7C+HTML+%7C+CSS+%7C+SQL+%7C+Lua)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1400&color=70A5FD&center=true&vCenter=true&width=620&lines=Software+Developer;Building+bots%2C+web+apps%2C+and+automation)](https://git.io/typing-svg)
 
 [![GitHub followers](https://img.shields.io/github/followers/maksimts-kool?style=for-the-badge&logo=github&label=Followers&color=70A5FD)](https://github.com/maksimts-kool?tab=followers)
 [![Profile views](https://komarev.com/ghpvc/?username=maksimts-kool&style=for-the-badge&color=BF91F3)](https://github.com/maksimts-kool)
@@ -74,16 +74,9 @@ Siin on valik minu õppetöö käigus valminud projekte. Nendes hoidlates harjut
 
 <div align="center">
 
-<img height="175" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=maksimts-kool&theme=tokyonight" alt="Maksim's GitHub statistics" />
-<img height="175" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=maksimts-kool&theme=tokyonight" alt="Most committed languages" />
-
-<br />
-
-<img src="https://streak-stats.demolab.com?user=maksimts-kool&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" />
-
-<br />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=maksimts-kool&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=ffffff&area=true&hide_border=true" alt="GitHub contribution graph" />
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=maksimts-kool&theme=tokyonight" alt="Maksim's GitHub profile details" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=maksimts-kool&theme=tokyonight" alt="Maksim's GitHub statistics" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=maksimts-kool&theme=tokyonight" alt="Repositories by language" />
 
 </div>
 
