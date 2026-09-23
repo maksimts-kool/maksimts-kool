@@ -60,7 +60,7 @@ async function readmeExcerpt(repo) {
   }
 }
 
-async function generateDescription(repo, language) {
+async function generateDescription(repo, language, examples) {
   const key = process.env.OPENROUTER_API_KEY;
   if (!key) return "";
   const readme = await readmeExcerpt(repo);
@@ -68,47 +68,54 @@ async function generateDescription(repo, language) {
   const prompt = [
     `Write a one-line description of this GitHub repository for a profile README, in ${language}.`,
     "At most 12 words. No trailing period, no quotes, no emoji, no markdown. Reply with the description only.",
+    "Match the style of these existing descriptions:",
+    ...examples.map((e) => `- ${e}`),
     "",
     `Name: ${repo.name}`,
     `Languages: ${languages || "unknown"}`,
     `README:\n${readme || "(none)"}`,
   ].join("\n");
-  try {
-    const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      method: "POST",
-      headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ models: config.aiModels ?? ["openrouter/free"], messages: [{ role: "user", content: prompt }] }),
-    });
-    if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
-    const text = (await res.json()).choices?.[0]?.message?.content ?? "";
-    const line = text.trim().split("\n")[0].replace(/^["'`*]+|["'`*.]+$/g, "").trim();
-    if (!line) return "";
-    console.log(`Generated description for ${repo.name}: ${line}`);
-    return (cache[repo.name] = line.slice(0, 120));
-  } catch (err) {
-    console.warn(`Could not generate a description for ${repo.name}: ${err.message}`);
-    return "";
+  // Free models are often rate-limited or reply with nothing, so try each one in turn.
+  for (const model of config.aiModels ?? ["openrouter/free"]) {
+    try {
+      const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ model, messages: [{ role: "user", content: prompt }] }),
+      });
+      if (!res.ok) throw new Error(`${res.status} ${(await res.text()).slice(0, 200)}`);
+      const text = (await res.json()).choices?.[0]?.message?.content ?? "";
+      const line = text.trim().split("\n")[0].replace(/^["'`*]+|["'`*.]+$/g, "").trim();
+      if (line.split(/\s+/).length < 3) throw new Error(`unusable reply ${JSON.stringify(line)}`);
+      console.log(`Generated description for ${repo.name} with ${model}: ${line}`);
+      return (cache[repo.name] = line.slice(0, 120));
+    } catch (err) {
+      console.warn(`${model} could not describe ${repo.name}: ${err.message}`);
+    }
   }
+  return "";
 }
 
-async function describe(repo, language) {
-  return repo.description || config.about?.[repo.name]?.description || cache[repo.name] || generateDescription(repo, language);
+async function describe(repo, language, examples) {
+  return repo.description || config.about?.[repo.name]?.description || cache[repo.name] || generateDescription(repo, language, examples);
 }
 
 const cell = (text) => String(text).replace(/\|/g, "\\|").replace(/\n/g, " ");
 
-async function row(repo, bold, language) {
+async function row(repo, bold, language, examples) {
   const about = config.about?.[repo.name] ?? {};
   const title = about.title ?? repo.name;
   const name = bold ? `**${title}**` : title;
   const stars = repo.stargazers_count > 0 ? ` ⭐ ${repo.stargazers_count}` : "";
-  const description = await describe(repo, language);
+  const description = await describe(repo, language, examples);
   return `| [${name}](${repo.html_url})${stars} | ${cell(description)} | ${cell(await stackOf(repo))} |`;
 }
 
-async function table(repos, headers, boldTop, language) {
+async function table(repos, all, headers, boldTop, language) {
+  // Hand-written descriptions from the same section show the model the expected tone and language.
+  const examples = all.map((r) => config.about?.[r.name]?.description).filter(Boolean).slice(0, 6);
   const rows = [];
-  for (const [i, repo] of repos.entries()) rows.push(await row(repo, i < boldTop, language));
+  for (const [i, repo] of repos.entries()) rows.push(await row(repo, i < boldTop, language, examples));
   return [`| ${headers.join(" | ")} |`, `|${headers.map(() => "---").join("|")}|`, ...rows].join("\n");
 }
 
@@ -124,12 +131,14 @@ const school = new Set(config.school ?? []);
 const visible = (await listRepos()).filter((r) => !r.fork && !r.archived && !r.private && !hidden.has(r.name));
 const isSchool = (r) => school.has(r.name) || r.topics?.includes("kool") || r.topics?.includes("school");
 
-const personal = rank(visible.filter((r) => !isSchool(r))).slice(0, config.personalCount ?? 5);
-const coursework = rank(visible.filter(isSchool)).slice(0, config.schoolCount ?? 6);
+const allPersonal = rank(visible.filter((r) => !isSchool(r)));
+const allSchool = rank(visible.filter(isSchool));
+const personal = allPersonal.slice(0, config.personalCount ?? 5);
+const coursework = allSchool.slice(0, config.schoolCount ?? 6);
 
 let readme = await readFile("README.md", "utf8");
-readme = replaceSection(readme, "PROJECTS", await table(personal, ["Project", "What it does", "Stack"], 3, "English"));
-readme = replaceSection(readme, "SCHOOL", await table(coursework, ["Hoidla", "Sisu", "Keel"], 0, "Estonian"));
+readme = replaceSection(readme, "PROJECTS", await table(personal, allPersonal, ["Project", "What it does", "Stack"], 3, "English"));
+readme = replaceSection(readme, "SCHOOL", await table(coursework, allSchool, ["Hoidla", "Sisu", "Keel"], 0, "Estonian"));
 await writeFile("README.md", readme);
 await writeFile(CACHE_PATH, JSON.stringify(cache, null, 2) + "\n");
 
