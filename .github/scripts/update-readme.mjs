@@ -30,6 +30,27 @@ async function listRepos() {
   }
 }
 
+// Repos pinned on the GitHub profile already appear below the README, so they can be left out of the tables.
+async function githubPins() {
+  if (!config.skipGitHubPins) return [];
+  try {
+    const res = await fetch("https://api.github.com/graphql", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json", "User-Agent": "readme-projects" },
+      body: JSON.stringify({
+        query: `query($login: String!) { user(login: $login) { pinnedItems(first: 6, types: REPOSITORY) { nodes { ... on Repository { name } } } } }`,
+        variables: { login: config.user },
+      }),
+    });
+    const { data, errors } = await res.json();
+    if (errors || !data) throw new Error(JSON.stringify(errors ?? res.status));
+    return data.user.pinnedItems.nodes.map((n) => n.name);
+  } catch (err) {
+    console.warn(`Could not read GitHub profile pins, so pinned repos stay in the tables: ${err.message}`);
+    return [];
+  }
+}
+
 function rank(repos) {
   const pinned = config.pinned ?? [];
   return repos.sort((a, b) => {
@@ -126,7 +147,9 @@ function replaceSection(readme, marker, content) {
   return readme.replace(pattern, `${start}\n${content}\n${end}`);
 }
 
-const hidden = new Set(config.hidden ?? []);
+const pins = await githubPins();
+if (pins.length) console.log(`Skipping repos pinned on GitHub: ${pins.join(", ")}`);
+const hidden = new Set([...(config.hidden ?? []), ...pins]);
 const school = new Set(config.school ?? []);
 const visible = (await listRepos()).filter((r) => !r.fork && !r.archived && !r.private && !hidden.has(r.name));
 const isSchool = (r) => school.has(r.name) || r.topics?.includes("kool") || r.topics?.includes("school");
