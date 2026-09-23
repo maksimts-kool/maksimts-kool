@@ -2,9 +2,8 @@
   "user": "maksimts-kool",
   "personalCount": 5,
   "schoolCount": 6,
-  "pinned": [],
+  "pinned": ["mylebot", "sbaHelper", "iptv-info-channel", "KidTime", "Mobiilirakendused", "Veebirakendused"],
   "aiModels": ["nvidia/nemotron-3-super-120b-a12b:free", "google/gemma-4-31b-it:free", "qwen/qwen3.8-27b:free"],
-  "skipGitHubPins": true,
   "hidden": ["maksimts-kool"],
   "school": [
     "ABTunniTooSQL",

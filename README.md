@@ -16,9 +16,11 @@ from the interface to the backend to the deployment.
 <!-- PROJECTS:START -->
 | Project | What it does | Stack |
 |---|---|---|
-| [**Tunniplaan**](https://github.com/maksimts-kool/koolTimetable) | Class timetable site synced from Tahvel and EduPage, with a calendar feed | JavaScript · CSS |
-| [**My Lifts Mall Portal**](https://github.com/maksimts-kool/myle-storeowners) | Verified-member portal for stores, elections, and place-file submissions | React · Fastify · PostgreSQL |
-| [**SCR Virtual Shift Generator**](https://github.com/maksimts-kool/scrshift2) | Realistic driving shifts from live Stepford County Railway data | React · TypeScript · Vite |
+| 📌 [**Discord–Roblox Session Tracker**](https://github.com/maksimts-kool/mylebot) | Live session tracking, reports, and leaderboards in Discord | TypeScript · Discord · Roblox |
+| 📌 [**SBA Helper Bots**](https://github.com/maksimts-kool/sbaHelper) | Telegram bots for media downloads and uMap route alerts | Python · Telegram · Docker |
+| 📌 [**IPTV Info Channel**](https://github.com/maksimts-kool/iptv-info-channel) | Personal HLS channels with EPG and a React admin panel | JavaScript · React · FFmpeg |
+| 📌 [**KidTime**](https://github.com/maksimts-kool/KidTime) | Self-hosted Windows screen-time and app control with a web panel | C# · ASP.NET Core · Next.js |
+| [Tunniplaan](https://github.com/maksimts-kool/koolTimetable) | Class timetable site synced from Tahvel and EduPage, with a calendar feed | JavaScript · CSS |
 <!-- PROJECTS:END -->
 
 <details>
@@ -28,6 +30,8 @@ from the interface to the backend to the deployment.
 <!-- SCHOOL:START -->
 | Hoidla | Sisu | Keel |
 |---|---|---|
+| 📌 [Mobiilirakendused](https://github.com/maksimts-kool/Mobiilirakendused) | Mobiilirakenduste õppetööd | C# |
+| 📌 [Veebirakendused](https://github.com/maksimts-kool/Veebirakendused) | Veebiarenduse ülesanded | PHP · HTML · CSS |
 | [Programmeerimine](https://github.com/maksimts-kool/Programmeerimine) | Programmeerimise alused | C# · HTML · CSS |
 | [litetracker](https://github.com/maksimts-kool/litetracker) | Hajusrakenduste sõnavara kontroll (HTML/JS, Tailwind CSS + daisyUI) | JavaScript · HTML |
 | [rest-api-hajus](https://github.com/maksimts-kool/rest-api-hajus) | REST API hajusrakenduste kursusel | JavaScript |

@@ -30,27 +30,6 @@ async function listRepos() {
   }
 }
 
-// Repos pinned on the GitHub profile already appear below the README, so they can be left out of the tables.
-async function githubPins() {
-  if (!config.skipGitHubPins) return [];
-  try {
-    const res = await fetch("https://api.github.com/graphql", {
-      method: "POST",
-      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json", "User-Agent": "readme-projects" },
-      body: JSON.stringify({
-        query: `query($login: String!) { user(login: $login) { pinnedItems(first: 6, types: REPOSITORY) { nodes { ... on Repository { name } } } } }`,
-        variables: { login: config.user },
-      }),
-    });
-    const { data, errors } = await res.json();
-    if (errors || !data) throw new Error(JSON.stringify(errors ?? res.status));
-    return data.user.pinnedItems.nodes.map((n) => n.name);
-  } catch (err) {
-    console.warn(`Could not read GitHub profile pins, so pinned repos stay in the tables: ${err.message}`);
-    return [];
-  }
-}
-
 function rank(repos) {
   const pinned = config.pinned ?? [];
   return repos.sort((a, b) => {
@@ -128,15 +107,16 @@ async function row(repo, bold, language, examples) {
   const title = about.title ?? repo.name;
   const name = bold ? `**${title}**` : title;
   const stars = repo.stargazers_count > 0 ? ` ⭐ ${repo.stargazers_count}` : "";
+  const pin = config.pinned?.includes(repo.name) ? "📌 " : "";
   const description = await describe(repo, language, examples);
-  return `| [${name}](${repo.html_url})${stars} | ${cell(description)} | ${cell(await stackOf(repo))} |`;
+  return `| ${pin}[${name}](${repo.html_url})${stars} | ${cell(description)} | ${cell(await stackOf(repo))} |`;
 }
 
-async function table(repos, all, headers, boldTop, language) {
+async function table(repos, all, headers, boldPinned, language) {
   // Hand-written descriptions from the same section show the model the expected tone and language.
   const examples = all.map((r) => config.about?.[r.name]?.description).filter(Boolean).slice(0, 6);
   const rows = [];
-  for (const [i, repo] of repos.entries()) rows.push(await row(repo, i < boldTop, language, examples));
+  for (const repo of repos) rows.push(await row(repo, boldPinned && config.pinned?.includes(repo.name), language, examples));
   return [`| ${headers.join(" | ")} |`, `|${headers.map(() => "---").join("|")}|`, ...rows].join("\n");
 }
 
@@ -147,9 +127,7 @@ function replaceSection(readme, marker, content) {
   return readme.replace(pattern, `${start}\n${content}\n${end}`);
 }
 
-const pins = await githubPins();
-if (pins.length) console.log(`Skipping repos pinned on GitHub: ${pins.join(", ")}`);
-const hidden = new Set([...(config.hidden ?? []), ...pins]);
+const hidden = new Set(config.hidden ?? []);
 const school = new Set(config.school ?? []);
 const visible = (await listRepos()).filter((r) => !r.fork && !r.archived && !r.private && !hidden.has(r.name));
 const isSchool = (r) => school.has(r.name) || r.topics?.includes("kool") || r.topics?.includes("school");
@@ -160,8 +138,8 @@ const personal = allPersonal.slice(0, config.personalCount ?? 5);
 const coursework = allSchool.slice(0, config.schoolCount ?? 6);
 
 let readme = await readFile("README.md", "utf8");
-readme = replaceSection(readme, "PROJECTS", await table(personal, allPersonal, ["Project", "What it does", "Stack"], 3, "English"));
-readme = replaceSection(readme, "SCHOOL", await table(coursework, allSchool, ["Hoidla", "Sisu", "Keel"], 0, "Estonian"));
+readme = replaceSection(readme, "PROJECTS", await table(personal, allPersonal, ["Project", "What it does", "Stack"], true, "English"));
+readme = replaceSection(readme, "SCHOOL", await table(coursework, allSchool, ["Hoidla", "Sisu", "Keel"], false, "Estonian"));
 await writeFile("README.md", readme);
 await writeFile(CACHE_PATH, JSON.stringify(cache, null, 2) + "\n");
 
