@@ -129,19 +129,30 @@ function replaceSection(readme, marker, content) {
 
 const hidden = new Set(config.hidden ?? []);
 const school = new Set(config.school ?? []);
-const visible = (await listRepos()).filter((r) => !r.fork && !r.archived && !r.private && !hidden.has(r.name));
+const owned = (await listRepos()).filter((r) => !r.fork && !r.private && !hidden.has(r.name));
+const visible = owned.filter((r) => !r.archived);
 const isSchool = (r) => school.has(r.name) || r.topics?.includes("kool") || r.topics?.includes("school");
 
 const allPersonal = rank(visible.filter((r) => !isSchool(r)));
 const allSchool = rank(visible.filter(isSchool));
 const personal = allPersonal.slice(0, config.personalCount ?? 5);
 const coursework = allSchool.slice(0, config.schoolCount ?? 6);
+const archivedSchool = rank(owned.filter((r) => r.archived && isSchool(r)));
+
+// Finished coursework goes in a nested, collapsed list inside the school section.
+async function archivedList() {
+  if (!archivedSchool.length) return "";
+  const rows = await table(archivedSchool, archivedSchool, ["Hoidla", "Sisu", "Keel"], false, "Estonian");
+  return [`<details>`, `<summary>🗄️ Arhiveeritud (${archivedSchool.length})</summary>`, `<br />`, ``, rows, ``, `</details>`].join("\n");
+}
 
 let readme = await readFile("README.md", "utf8");
 readme = replaceSection(readme, "PROJECTS", await table(personal, allPersonal, ["Project", "What it does", "Stack"], true, "English"));
 readme = replaceSection(readme, "SCHOOL", await table(coursework, allSchool, ["Hoidla", "Sisu", "Keel"], false, "Estonian"));
+readme = replaceSection(readme, "ARCHIVED", await archivedList());
 await writeFile("README.md", readme);
 await writeFile(CACHE_PATH, JSON.stringify(cache, null, 2) + "\n");
 
 console.log(`Personal: ${personal.map((r) => r.name).join(", ")}`);
 console.log(`School: ${coursework.map((r) => r.name).join(", ")}`);
+console.log(`Archived school: ${archivedSchool.map((r) => r.name).join(", ")}`);

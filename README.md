@@ -38,6 +38,26 @@ from the interface to the backend to the deployment.
 | [prog2-orm](https://github.com/maksimts-kool/prog2-orm) | ORM-i ülesanded C#-is | C# · HTML · CSS |
 <!-- SCHOOL:END -->
 
+<!-- ARCHIVED:START -->
+<details>
+<summary>🗄️ Arhiveeritud (9)</summary>
+<br />
+
+| Hoidla | Sisu | Keel |
+|---|---|---|
+| [Apache-project](https://github.com/maksimts-kool/Apache-project) | PHP ja Apache veebirakendus | PHP · CSS · JavaScript |
+| [Võrgurakendused](https://github.com/maksimts-kool/Vorgurakendused) | Võrgurakenduste harjutused | Python |
+| [TA-Kalender](https://github.com/maksimts-kool/TA-Kalender) | MS Projecti juhend MkDocsi saidina | — |
+| [jalgratta-eksam](https://github.com/maksimts-kool/jalgratta-eksam) | Jalgrattaeksami veebirakendus | PHP · CSS |
+| [Andmebaasid](https://github.com/maksimts-kool/Andmebaasid25) | Trigerid, protseduurid ja funktsioonid | SQL |
+| [Pohikonstruktioonid](https://github.com/maksimts-kool/Pohikonstruktioonid) | Pythoni põhikonstruktsioonid | Python |
+| [ABTunniTooSQL](https://github.com/maksimts-kool/ABTunniTooSQL) | Andmebaaside tunnitööd | TSQL |
+| [Andmebaasid24](https://github.com/maksimts-kool/Andmebaasid24) | Andmebaaside ülesanded (2024) | TSQL |
+| [TestProgrammeerimine](https://github.com/maksimts-kool/TestProgrammeerimine) | Programmeerimise harjutused | C# |
+
+</details>
+<!-- ARCHIVED:END -->
+
 </details>
 
 <div align="center">
