@@ -31,7 +31,7 @@ from the interface to the backend to the deployment.
 | Hoidla | Sisu | Keel |
 |---|---|---|
 | 📌 [Mobiilirakendused](https://github.com/maksimts-kool/Mobiilirakendused) | Mobiilirakenduste õppetööd | C# |
-| 📌 [Veebirakendused](https://github.com/maksimts-kool/Veebirakendused) | Veebiarenduse ülesanded | PHP · HTML · CSS |
+| 📌 [Veebirakendused](https://github.com/maksimts-kool/Veebirakendused) | Veebiarenduse ülesanded | HTML · PHP · CSS |
 | [Programmeerimine](https://github.com/maksimts-kool/Programmeerimine) | Programmeerimise alused | C# · HTML · CSS |
 | [litetracker](https://github.com/maksimts-kool/litetracker) | Hajusrakenduste sõnavara kontroll (HTML/JS, Tailwind CSS + daisyUI) | JavaScript · HTML |
 | [rest-api-hajus](https://github.com/maksimts-kool/rest-api-hajus) | REST API hajusrakenduste kursusel | JavaScript |
