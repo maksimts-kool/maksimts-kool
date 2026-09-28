@@ -20,7 +20,7 @@ from the interface to the backend to the deployment.
 | 📌 [**SBA Helper Bots**](https://github.com/maksimts-kool/sbaHelper) | Telegram bots for media downloads and uMap route alerts | Python · Telegram · Docker |
 | 📌 [**IPTV Info Channel**](https://github.com/maksimts-kool/iptv-info-channel) | Personal HLS channels with EPG and a React admin panel | JavaScript · React · FFmpeg |
 | 📌 [**KidTime**](https://github.com/maksimts-kool/KidTime) | Self-hosted Windows screen-time and app control with a web panel | C# · ASP.NET Core · Next.js |
-| 📌 [**KeelteKoolV2**](https://github.com/maksimts-kool/KeelteKoolV2) | Interactive language learning platform with Discord integration and progress tracking | HTML · C# · CSS |
+| [Tunniplaan](https://github.com/maksimts-kool/koolTimetable) | Class timetable site synced from Tahvel and EduPage, with a calendar feed | JavaScript · CSS |
 <!-- PROJECTS:END -->
 
 <details>
@@ -32,10 +32,10 @@ from the interface to the backend to the deployment.
 |---|---|---|
 | 📌 [Mobiilirakendused](https://github.com/maksimts-kool/Mobiilirakendused) | Mobiilirakenduste õppetööd | C# |
 | 📌 [Veebirakendused](https://github.com/maksimts-kool/Veebirakendused) | Veebiarenduse ülesanded | HTML · PHP · CSS |
+| 📌 [KeelteKoolV2](https://github.com/maksimts-kool/KeelteKoolV2) | Interactive language learning platform with Discord integration and progress tracking | HTML · C# · CSS |
 | [Programmeerimine](https://github.com/maksimts-kool/Programmeerimine) | Programmeerimise alused | C# · HTML · CSS |
 | [litetracker](https://github.com/maksimts-kool/litetracker) | Hajusrakenduste sõnavara kontroll (HTML/JS, Tailwind CSS + daisyUI) | JavaScript · HTML |
 | [rest-api-hajus](https://github.com/maksimts-kool/rest-api-hajus) | REST API hajusrakenduste kursusel | JavaScript |
-| [prog2-orm](https://github.com/maksimts-kool/prog2-orm) | ORM-i ülesanded C#-is | C# · HTML · CSS |
 <!-- SCHOOL:END -->
 
 <!-- ARCHIVED:START -->
