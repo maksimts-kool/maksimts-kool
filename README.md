@@ -20,7 +20,7 @@ from the interface to the backend to the deployment.
 | 📌 [**SBA Helper Bots**](https://github.com/maksimts-kool/sbaHelper) | Telegram bots for media downloads and uMap route alerts | Python · Telegram · Docker |
 | 📌 [**IPTV Info Channel**](https://github.com/maksimts-kool/iptv-info-channel) | Personal HLS channels with EPG and a React admin panel | JavaScript · React · FFmpeg |
 | 📌 [**KidTime**](https://github.com/maksimts-kool/KidTime) | Self-hosted Windows screen-time and app control with a web panel | C# · ASP.NET Core · Next.js |
-| [Tunniplaan](https://github.com/maksimts-kool/koolTimetable) | Class timetable site synced from Tahvel and EduPage, with a calendar feed | JavaScript · CSS |
+| [sugupuuRakendusXML](https://github.com/maksimts-kool/sugupuuRakendusXML) | Family tree application with XML data, web UI and C# backend | HTML · C# · CSS |
 <!-- PROJECTS:END -->
 
 <details>
