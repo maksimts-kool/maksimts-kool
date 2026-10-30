@@ -2,7 +2,7 @@
   "user": "maksimts-kool",
   "personalCount": 5,
   "schoolCount": 6,
-  "pinned": ["mylebot", "sbaHelper", "iptv-info-channel", "KidTime", "sugupuuRakendusXML", "Veebirakendused", "KeelteKoolV2", "FunktsioonideUurimine"],
+  "pinned": ["mylebot", "sbaHelper", "iptv-info-channel", "KidTime", "KeelteKoolV2", "prokat-hub"],
   "aiModels": ["nvidia/nemotron-3-super-120b-a12b:free", "google/gemma-4-31b-it:free", "qwen/qwen3.8-27b:free"],
   "hidden": ["maksimts-kool"],
   "school": [
@@ -24,7 +24,11 @@
     "Vorgurakendused",
     "KeelteKoolV2",
     "sugupuuRakendusXML",
-    "FunktsioonideUurimine"
+    "FunktsioonideUurimine",
+    "jwt-token-test",
+    "prokat-hub",
+    "HusseinFunktsioonideUurimine",
+    "cors-testimine",
   ],
   "about": {
     "mylebot": { "title": "Discord–Roblox Session Tracker", "description": "Live session tracking, reports, and leaderboards in Discord", "stack": "TypeScript · Discord · Roblox" },
