@@ -29,7 +29,8 @@
     "prokat-hub",
     "HusseinFunktsioonideUurimine",
     "cors-testimine",
-    "jwt-harjutus"
+    "jwt-harjutus",
+    "games-api"
   ],
   "about": {
     "mylebot": { "title": "Discord–Roblox Session Tracker", "description": "Live session tracking, reports, and leaderboards in Discord", "stack": "TypeScript · Discord · Roblox" },
