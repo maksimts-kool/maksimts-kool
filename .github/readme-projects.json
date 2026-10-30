@@ -28,7 +28,7 @@
     "jwt-token-test",
     "prokat-hub",
     "HusseinFunktsioonideUurimine",
-    "cors-testimine",
+    "cors-testimine"
   ],
   "about": {
     "mylebot": { "title": "Discord–Roblox Session Tracker", "description": "Live session tracking, reports, and leaderboards in Discord", "stack": "TypeScript · Discord · Roblox" },
