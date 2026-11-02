@@ -31,7 +31,7 @@ from the interface to the backend to the deployment.
 | Hoidla | Sisu | Keel |
 |---|---|---|
 | 📌 [KeelteKoolV2](https://github.com/maksimts-kool/KeelteKoolV2) | Interactive language learning platform with Discord integration and progress tracking | C# · HTML · CSS |
-| 📌 [prokat-hub](https://github.com/maksimts-kool/prokat-hub) |  | — |
+| 📌 [prokat-hub](https://github.com/maksimts-kool/prokat-hub) | Prokati hubi projektid | — |
 | [cors-testimine](https://github.com/maksimts-kool/cors-testimine) |  | JavaScript · HTML |
 | [jwt-harjutus](https://github.com/maksimts-kool/jwt-harjutus) |  | TypeScript · CSS · JavaScript |
 | [games-api](https://github.com/maksimts-kool/games-api) | REST API for games (Hajusrakenduste alused, Backend) | JavaScript |
