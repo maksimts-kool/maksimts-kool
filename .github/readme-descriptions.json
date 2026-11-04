@@ -4,5 +4,6 @@
   "osmand-maksimts": "Android companion app for OsmAnd: Telegram trip summaries and Estonian transit timetables",
   "osmand-companion": "Adds Estonian transit timetables to OsmAnd via Android companion",
   "FunktsioonideUurimine": "Funktsioonide uurimise veebirakendus C#-is ja TypeScriptis",
-  "prokat-hub": "Prokati hubi projektid"
+  "prokat-hub": "Prokati hubi projektid",
+  "jwt-token-test": "JWT-põhise autentimise testimine Flaskis"
 }
