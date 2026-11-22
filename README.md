@@ -17,9 +17,9 @@ from the interface to the backend to the deployment.
 | Project | What it does | Stack |
 |---|---|---|
 | 📌 [**Discord–Roblox Session Tracker**](https://github.com/maksimts-kool/mylebot) | Live session tracking, reports, and leaderboards in Discord | TypeScript · Discord · Roblox |
-| 📌 [**SBA Helper Bots**](https://github.com/maksimts-kool/sbaHelper) | Telegram bots for media downloads and uMap route alerts | Python · Telegram · Docker |
 | 📌 [**IPTV Info Channel**](https://github.com/maksimts-kool/iptv-info-channel) | Personal HLS channels with EPG and a React admin panel | JavaScript · React · FFmpeg |
 | 📌 [**KidTime**](https://github.com/maksimts-kool/KidTime) | Self-hosted Windows screen-time and app control with a web panel | C# · ASP.NET Core · Next.js |
+| [localmusiclive](https://github.com/maksimts-kool/localmusiclive) |  | Rust · Svelte · HTML |
 | [grabby](https://github.com/maksimts-kool/grabby) |  | TypeScript · Kotlin · HTML |
 <!-- PROJECTS:END -->
 
