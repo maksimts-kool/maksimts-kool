@@ -31,7 +31,7 @@ from the interface to the backend to the deployment.
 | Hoidla | Sisu | Keel |
 |---|---|---|
 | 📌 [KeelteKoolV2](https://github.com/maksimts-kool/KeelteKoolV2) | Interactive language learning platform with Discord integration and progress tracking | C# · HTML · CSS |
-| 📌 [prokat-hub](https://github.com/maksimts-kool/prokat-hub) | Prokati hubi projektid | C# · TypeScript · CSS |
+| 📌 [prokat-hub](https://github.com/maksimts-kool/prokat-hub) | Prokati hubi projektid | TypeScript · C# · CSS |
 | [games-api](https://github.com/maksimts-kool/games-api) | REST API for games (Hajusrakenduste alused, Backend) | JavaScript |
 | [FunktsioonideUurimine](https://github.com/maksimts-kool/FunktsioonideUurimine) | Funktsioonide uurimise veebirakendus C#-is ja TypeScriptis | C# · TypeScript · CSS |
 | [sugupuuRakendusXML](https://github.com/maksimts-kool/sugupuuRakendusXML) | Family tree application with XML data, web UI and C# backend | HTML · XSLT · C# |
